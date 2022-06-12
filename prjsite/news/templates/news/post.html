@@ -1,0 +1,9 @@
+{% extends 'post_list.html' %}
+
+{% block content %}
+
+<p><h1>{{ new.title }}</h1>{{ new.dateCreation|date:'d M y'}}</p>
+<p>{{ new.text }}</p>
+<p>{{' Post rating = '}}{{ new.rating }}</p>
+
+{% endblock content %}
